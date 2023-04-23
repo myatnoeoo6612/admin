@@ -11,30 +11,38 @@ import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
 import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
-
+import {Link} from 'react-router-dom';
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">Admin</span>
+        <Link to="/" style={{textDecoration: "none"}}>
+          <div className="logo">Admin</div>
+        </Link>
       </div>
       <hr />
       <div className="center">
         <ul>
             <p className="title">MAIN</p>
-            <li>
-              <DashboardIcon className="icon" />
+            <Link to="/" style={{textDecoration: "none"}}>
+              <li>
+                <DashboardIcon className="icon" />
                 <span >Dashboard</span>
-            </li>
+              </li>
+            </Link>
             <p className="title">LISTS</p>
-            <li>
-              <PersonOutlineOutlinedIcon className="icon" />
+            <Link to="/users" style={{textDecoration: "none"}}>
+              <li>
+                <PersonOutlineOutlinedIcon className="icon" />
                 <span>Users</span>
-            </li>
-            <li>
-              <StoreIcon className="icon" />
-                <span >Products</span>
-            </li>
+              </li>
+            </Link>
+            <Link to="/products" style={{textDecoration: "none"}}>
+              <li>
+                <StoreIcon className="icon" />
+                <span>Products</span>
+              </li>
+            </Link>
             <li>
               <CreditCardOutlinedIcon className="icon" />
                 <span>Order</span>
@@ -76,11 +84,7 @@ const Sidebar = () => {
             </li>
         </ul>
       </div>
-      <div className="bottom">
-        <div className="colorOption"></div>
-        <div className="colorOption"></div>
-        
-      </div>
+      
     </div>
   )
 }

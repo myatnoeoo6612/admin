@@ -16,7 +16,7 @@ const Single = () => {
                         <h1 className="title">Information</h1>
                         <div className="singleitem">
                             <img 
-                                src="https://scontent-sin6-4.xx.fbcdn.net/v/t39.30808-6/332722720_111508305176519_964103897470684076_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=QsMSksdahaUAX92Ot-e&_nc_ht=scontent-sin6-4.xx&oh=00_AfBzUDDVygqUa0sUgv48uHXSrSROlCQUJal6h_qFTo7cew&oe=6447D801" 
+                                src="https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/332480402_707468334202508_623684826749262630_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_ohc=_kAKKA3LVeIAX8w3KRY&_nc_ht=scontent-sin6-3.xx&oh=00_AfCzZfHDh5yLJXVnIozBsARg5tiNGjHbN48LUjIu49YW8Q&oe=6449512F" 
                                 alt="" 
                                 className="itemImg" 
                             />
