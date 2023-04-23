@@ -1,5 +1,6 @@
 import Navbar from "../../components/navbar/Navbar"
 import Sidebar from "../../components/sidebar/Sidebra"
+import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
 import "./new.scss"
 
 const New = () => {
@@ -17,6 +18,12 @@ const New = () => {
                     </div>
                     <div className="right">
                         <form>
+                            <div className="formInput">
+                                <label htmlFor="file">
+                                    Image: <DriveFolderUploadIcon className="icon"/>
+                                </label>
+                                <input type="file" id="file" style={{display: "none"}}/>
+                            </div>
                             <div className="formInput">
                                 <label>Username</label>
                                 <input type="text" placeholder="myat_noe_oo" />
